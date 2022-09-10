@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: red;
+    width: 20vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.sidebar nav{
+    padding: 72px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 45px;
+}
+.main{
+    background-color: yellow;
+    width: 80vw;
+}
+.container{
+    display: flex;
+}
