@@ -4,22 +4,86 @@
 }
 
 .sidebar{
-    background-color: red;
-    width: 20vw;
+    background-color: blue;
+    color: white; 
+    width: 300px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
 }
 .sidebar nav{
-    padding: 72px;
+    padding: 45px;
 }
 .sidebar nav li{
     list-style: none;
-    font-size: 20px;
-    padding: 45px;
+    font-size: 30px;
+    padding: 33px 0;
 }
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+
 .main{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 80vw;
 }
 .container{
     display: flex;
+}
+
+.infoContainer{
+    /* background-color:green; */
+    height: 58vh; 
+    width: 70vw;
+    margin: 124px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-size: 55px;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 30px;
+}
+.moreabout{
+    font-size: 19px;
+    margin-top: 20px;
+}
+.buttons{
+    margin-top: 30px;
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer ;
+}
+.buttons button:hover{
+    background-color: white;
+    color: blue;
+    
+}
+
+.devPic img{
+    /* padding-top: 100px; */
+    width: 481px;
+    height: 58vh;
+    
 }
