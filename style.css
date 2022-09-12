@@ -65,7 +65,7 @@
     margin-top: 30px;
 }
 
-.buttons button{
+.btn{
     padding: 9px 14px;
     border-radius: 22px;
     color: white;
@@ -75,7 +75,7 @@
     margin: 0 3px;
     cursor: pointer ;
 }
-.buttons button:hover{
+.btn:hover{
     background-color: white;
     color: blue;
     
@@ -85,5 +85,69 @@
     /* padding-top: 100px; */
     width: 481px;
     height: 58vh;
+    border-radius: 100%;
     
 }
+
+
+/* =============================================================Contact.html ======================================== */
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 144px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contactform h1{
+    /* text-align: center; */
+    padding: 10px 0;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+
+    width: 26vw;
+    border-radius:  5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 14px;
+    color: grey;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction:  row;
+}
+#form-check input{
+    width: 24px;
+    margin: 1px 0;
+}
+.btn-sm{
+    font-size:  14px;
+    padding: 10px 19px;
+    margin: 12px 0;;
+}
+
+/* =============================================================Intro.html ======================================== */
+
+
+
+.devInfo h1{
+    font-size: 50px;
+    color: rgb(126, 119, 119);
+    margin-bottom: 30px;
+
+}
+.devInfo p{
+    font-size: 22px;
+    color: rgb(126, 119, 119);
+    
+}
+
