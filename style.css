@@ -1,153 +1,160 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
 }
 
-.sidebar{
-    background-color: blue;
-    color: white; 
-    width: 300px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+body{
+    background-color: #080808;
+    color: #fff;
+
+}
+#header{
+    width: 100%;
     height: 100vh;
-}
-.sidebar nav{
-    padding: 45px;
-}
-.sidebar nav li{
-    list-style: none;
-    font-size: 30px;
-    padding: 33px 0;
-}
-
-.sidebar nav li a{
-    text-decoration: none;
-    color: white;
-}
-
-.main{
-    /* background-color: yellow; */
-    width: 80vw;
+    outline: 2px solid white;
+    background-image: url(/Images/T034U5VTU6T-U039U0AJQKU-91b35557389d-512.jpeg);
+    background-repeat: no-repeat;
+    /* background-size: 20%; */
+    background-position: center right;
 }
 .container{
+    padding: 10px 10%;
+}
+nav{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
 }
 
-.infoContainer{
-    /* background-color:green; */
-    height: 58vh; 
-    width: 70vw;
-    margin: 124px auto;
-    display: flex;
-    justify-content: space-around;
-}
-.devInfo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.hello{
-    font-size: 55px;
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
 }
 
-.name{
-    font-size: 40px;
-    font-weight: bold;
+nav ul li a:hover::after{
+    width: 100%;
 }
 
-.about{
+.header-text{
+    margin-top: 20%;
     font-size: 30px;
 }
-.moreabout{
-    font-size: 19px;
+
+.header-text h1{
+    font-size: 55px;
     margin-top: 20px;
 }
-.buttons{
-    margin-top: 30px;
+
+.header-text h1 span{
+    color: #ff004f;
 }
 
-.btn{
-    padding: 9px 14px;
-    border-radius: 22px;
-    color: white;
-    background-color: blue;
-    font-weight: bold;
-    font-size: 21px;
-    margin: 0 3px;
-    cursor: pointer ;
-}
-.btn:hover{
-    background-color: white;
-    color: blue;
-    
-}
+/* ======================ABOUT======================== */
 
-.devPic img{
-    /* padding-top: 100px; */
-    width: 481px;
-    height: 58vh;
-    border-radius: 100%;
-    
+#about{
+    padding: 80px 0;
+    color: #ababab;
+
 }
-
-
-/* =============================================================Contact.html ======================================== */
-
-.contactform {
-    padding: 0 34px;
-    padding-top: 144px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.contactform h1{
-    /* text-align: center; */
-    padding: 10px 0;
-}
-.contactform form div{
-    padding: 10px 0;
+.row{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 10%;
+}
+.about-col-2{
+    flex-basis: 60%;
+
 }
 
-.contactform form div input{
-
-    width: 26vw;
-    border-radius:  5px;
-    margin: 6px 0 0 0;
-    padding: 3px;
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
 }
 
-#emailHelp{
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;   
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #b54769;
     font-size: 14px;
-    color: grey;
-    margin: 0 5px;
-    padding: 3px 0 0 0;
 }
-#form-check{
-    flex-direction:  row;
+.tab-contents{
+    display: none;
 }
-#form-check input{
-    width: 24px;
-    margin: 1px 0;
-}
-.btn-sm{
-    font-size:  14px;
-    padding: 10px 19px;
-    margin: 12px 0;;
+.tab-contents.active-tab{
+    display: block;
 }
 
-/* =============================================================Intro.html ======================================== */
+/* =============================Projects=============================== */
 
-
-
-.devInfo h1{
-    font-size: 50px;
-    color: rgb(126, 119, 119);
-    margin-bottom: 30px;
-
-}
-.devInfo p{
-    font-size: 22px;
-    color: rgb(126, 119, 119);
-    
+#services{
+    padding: 30px 0;
 }
 
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
