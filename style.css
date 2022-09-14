@@ -13,7 +13,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    outline: 2px solid white;
+    /* outline: 2px solid white; */
     background-image: url(/Images/T034U5VTU6T-U039U0AJQKU-91b35557389d-512.jpeg);
     background-repeat: no-repeat;
     /* background-size: 20%; */
@@ -189,3 +189,26 @@ nav ul li a:hover::after{
 }
 
 /* ================================Projects==================================== */
+
+#projects{
+    padding: 50px 0;
+
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    
+}
