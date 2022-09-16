@@ -57,8 +57,8 @@
             <h2>Some of my interests aprt from Coding:</h2>
             <li>Playing Chess</li>
             <li>Weightlifting</li>
-            <li>Wacth Formula 1</li>
-            <li>Wacth Football</li>
+            <li>Watch Formula 1</li>
+            <li>Watch Football</li>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
@@ -126,47 +126,57 @@
               the phrase 'Core Java' defines the basic Java that covers the
               basic concept of Java programming language
             </p>
-            <a href="#">Learn More</a>
+            <a
+              href="https://www.javatpoint.com/what-is-core-java#:~:text=The%20Java%20SE%20is%20a,quite%20familiar%20Java%20SE%20implementation."
+              >Learn More</a
+            >
           </div>
           <div>
             <i class="fa-brands fa-js"></i>
             <h2>JavaScript</h2>
             <p>
-              The word Core describes the basic concept of something, and here,
-              the phrase 'Core Java' defines the basic Java that covers the
-              basic concept of Java programming language
+              JavaScript, often abbreviated to JS, is a programming language
+              that is one of the core technologies of the World Wide Web,
+              alongside HTML and CSS.
             </p>
-            <a href="#">Learn More</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              >Learn More</a
+            >
           </div>
           <div>
             <i class="fa-brands fa-css3"></i>
             <h2>CSS</h2>
             <p>
-              The word Core describes the basic concept of something, and here,
-              the phrase 'Core Java' defines the basic Java that covers the
-              basic concept of Java programming language
+              Cascading Style Sheets (CSS) is a stylesheet language used to
+              describe the presentation of a document written in HTML or XML
+              (including XML dialects such as SVG, MathML or XHTML). CSS
+              describes how elements should be rendered on screen, on paper, in
+              speech, or on other media.
             </p>
-            <a href="#">Learn More</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              >Learn More</a
+            >
           </div>
           <div>
             <i class="fa-brands fa-html5"></i>
             <h2>HTML</h2>
             <p>
-              The word Core describes the basic concept of something, and here,
-              the phrase 'Core Java' defines the basic Java that covers the
-              basic concept of Java programming language
+              HTML (HyperText Markup Language) is the most basic building block
+              of the Web. It defines the meaning and structure of web content.
             </p>
-            <a href="#">Learn More</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              >Learn More</a
+            >
           </div>
           <div>
             <i class="fa-brands fa-square-git"></i>
             <h2>GIT</h2>
             <p>
-              The word Core describes the basic concept of something, and here,
-              the phrase 'Core Java' defines the basic Java that covers the
-              basic concept of Java programming language
+              Git is a fast, scalable, distributed revision control system with
+              an unusually rich command set that provides both high-level
+              operations and full access to internals.
             </p>
-            <a href="#">Learn More</a>
+            <a href="https://docs.github.com/en">Learn More</a>
           </div>
         </div>
       </div>
@@ -192,7 +202,7 @@
         </div>
         <div class="work">
           <img
-            src="/Images/youtube-logo-png-116186698684etjs0nnhw.png"
+            src="/Images/youtube 1.jpeg"
             alt=""
           />
           <div class="layer">
@@ -207,15 +217,15 @@
           </div>
         </div>
         <div class="work">
-          <img src="/Images/download.jpeg" alt="" />
+          <img src="/Images/mb_social_banner.jpg" alt="" />
           <div class="layer">
             <h3>E Commerce App</h3>
             <p>
               Operating out of Chicago, MeanBuy.com is considered to be the most
               innovative B2C e-Commerce company of the 21st century
             </p>
-            <a href=""><i class="fa-solid fa-link"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href="https://extraordinary-bunny-1545e0.netlify.app/"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/282Manoj/Meanbuy.com2"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
@@ -315,16 +325,16 @@
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbw2y4xRQI_R-gyW4N6pEykvRLQfsBml6p3ZrIE8DjG-SIGwjY4Gk1h3ZfiDhZACOXxYBQ/exec";
   const form = document.forms["submit-to-google-sheet"];
-  const msg = document.getElementById("msg")
+  const msg = document.getElementById("msg");
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
-        msg.innerHTML = "Message sent successfully!"
-        setTimeout(function(){
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function () {
           msg.innerHTML = "";
-        },5000)
+        }, 5000);
         form.reset();
       })
       .catch((error) => console.error("Error!", error.message));
