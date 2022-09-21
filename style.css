@@ -411,6 +411,11 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
+    .calender{
+        border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    }
 }
 
 #msg{

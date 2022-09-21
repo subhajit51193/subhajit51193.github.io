@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
     <script
       src="https://kit.fontawesome.com/d933cbcb33.js"
       crossorigin="anonymous"
     ></script>
+    <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
   </head>
   <body>
     <div id="header">
@@ -34,6 +41,9 @@
             Hi, I am <span class="typing"></span><br />from Kolkata, India.
           </h1>
         </div>
+        <a href="/CV/Subhajit_Saha_CV.pdf" download class="btn btn2"
+            >Download Resume</a
+          >
         <!-- <a href="/CV/Subhajit_resume.pdf" class="btn">Download Resume</a> -->
       </div>
     </div>
@@ -296,6 +306,11 @@
       </div>
     </div>
   </div>
+  <!-- <div class="calendar"> -->
+    
+    <!-- Loading stuff -->
+    <!-- Loading the data just for you. -->
+<!-- </div> -->
   <div class="copyright">
     <p>
       Made by @Subhajit Saha with <i class="fa-solid fa-heart"></i> HTML, CSS
@@ -362,4 +377,9 @@
       })
       .catch((error) => console.error("Error!", error.message));
   });
+</script>
+<script>
+  GitHubCalendar(".calendar", "your-username");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "subhajit51193", { responsive: true });
 </script>
