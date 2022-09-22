@@ -100,10 +100,23 @@ nav ul li a:hover::after{
 
 }
 
+.about-col-2> h2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.about-col-2> p{
+    line-height: 25px;
+}
+
+.about-col-2> li{
+    margin-bottom: 5px;
+}
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .tab-titles{
@@ -272,7 +285,14 @@ nav ul li a:hover::after{
     background: #ff004f;
 
 }
+
+/* ======================calender======================== */
+
+
 /* ===================================Contact===================== */
+#contact{
+    margin-top: 50px;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -346,7 +366,7 @@ form .btn2{
 nav .fas{
     display: none;
 }
-@media only screen and (max-width:752px){
+@media only screen and (max-width:564px){
      #header{
         /* background-image: url(/Images/T034U5VTU6T-U039U0AJQKU-91b35557389d-512.jpeg); */
      }
@@ -413,8 +433,9 @@ nav .fas{
     }
     .calender{
         border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+        position: relative;
+        overflow: hidden;
+        
     }
 }
 
