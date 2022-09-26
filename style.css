@@ -17,9 +17,9 @@ body{
     width: 100%;
     height: 100vh;
     /* outline: 2px solid white; */
-    /* background-image: url(/Images/T034U5VTU6T-U039U0AJQKU-91b35557389d-512.jpeg); */
+    background-image: url(https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 100%;
     background-position: center right;
 }
 .container{
