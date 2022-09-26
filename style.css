@@ -17,13 +17,14 @@ body{
     width: 100%;
     height: 100vh;
     /* outline: 2px solid white; */
-    background-image: url(https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-image: url(/Images/quinton-coetzee-gpa8Y_Fk7Rg-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center right;
 }
 .container{
     padding: 10px 10%;
+    
 }
 nav{
     display: flex;
