@@ -20,7 +20,7 @@
   <body>
     <div id="header">
       <div class="container">
-        <nav>
+        <nav id="navbar">
           <img src="/Images/logo.svg" class="logo" />
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
@@ -269,6 +269,8 @@
       <a href="#" class="btn">See More</a>
     </div>
   </div>
+
+  
   <!-- =============================================Github calander=========================== -->
 
 <div class="profile-title" style="background-color: #bcb9b9 ;width: 80%;margin: auto;margin-bottom: 50px;" >
@@ -280,6 +282,21 @@
     alt="subhajit51193"
     style="width: 90%; height: auto; margin-top: 5vh;margin:5%;"
   />
+</div>
+
+<!-- ================================= -->
+
+ <!-- =============================================Github Stats=========================== -->
+
+ <div class="profile-title">
+  <div style="display: flex;">
+    <img align="left" src="https://activity-graph.herokuapp.com/graph?username=subhajit51193&bg_color=ffffff&color=000080&line=138808&point=ff9933&area=true" height="275px" width="100%"/>
+  </div>
+  <div>
+    <img align="left" src="https://github-readme-stats.vercel.app/api?username=subhajit51193&theme=flag-india&show_icons=true&count_private=true" alt="Github Stats" height="255px" width="100%" style="margin-top: 30px"/>
+  </div>
+  <img
+    style="width: 90%; height: auto; margin-top: 5vh;margin:5%;"/>
 </div>
 
 <!-- ================================= -->
@@ -400,4 +417,19 @@
   GitHubCalendar(".calendar", "your-username");
   // or enable responsive functionality
   GitHubCalendar(".calendar", "subhajit51193", { responsive: true });
+
+
+  // ==================stucky navbar
+
+  var navbar = document.getElementById("navbar");
+  var menu = document.getElementById("sidemenu");
+  window.onscroll = function(){
+    if (window.pageYOffset >= menu.offsetTop){
+      navbar.classList.add("sticky");
+    }
+    else{
+      navbar.classList.remove("sticky");
+    }
+  }
+
 </script>
